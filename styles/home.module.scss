@@ -1,0 +1,125 @@
+@import "./variables.scss";
+
+.home {
+  background-color: $belge;
+  padding: 1px;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userSection {
+  background-color: $belge;
+  padding: 1px;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.userWrapper {
+  background-color: $brown;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+.user {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid transparent;
+  transition: 200ms linear;
+  padding: 3px;
+  &Active {
+    padding-left: 8px;
+    border-color: $purple;
+  }
+}
+.link {
+  font-family: $roboto;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+}
+.createBtn {
+  display: block;
+  margin: auto;
+}
+.usersList {
+  margin-bottom: 40px;
+}
+.title {
+  font-size: 30px;
+  font-family: $arima;
+  font-weight: 500;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.text {
+  font-size: 18px;
+  font-family: $roboto;
+  font-weight: 300;
+  margin-bottom: 40px;
+  line-height: 26px;
+}
+
+.themeDark {
+  background-color: $darkThemeMain;
+}
+
+.themeLight {
+  background-color: $lightThemeMain;
+}
+
+.cardDarkTheme {
+  background-color: $darkTheme;
+}
+
+.cardLightTheme {
+  background-color: $lightTheme;
+}
+
+.darkThemeText {
+  color: $darkThemeText;
+}
+
+.lightThemeText {
+  color: $lightThemeText;
+}
+.img {
+  margin-top: 50px;
+  width: 500px;
+  @media (max-width: 1200px) {
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+.controlsWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+    margin: 0 auto;
+}

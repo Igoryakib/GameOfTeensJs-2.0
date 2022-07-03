@@ -1,0 +1,167 @@
+@import "../../styles/variables.scss";
+
+.footer {
+    width: 100vw;
+    background-color: $brown;
+    margin: 0 auto;
+    padding: 16px 20px;
+    transition: 200ms linear;
+    @media screen and (max-width: 650px) {
+        padding: 26px 20px;
+    }
+}
+
+.themeDark {
+    background-color: $darkTheme;
+}
+
+.themeLight {
+    background-color: $lightTheme;
+}
+
+.content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    @media screen and (max-width: 650px) {
+        justify-content: space-around;
+        flex-direction: column;
+    }
+}
+
+.wrapperLogo {
+    max-width: 255px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 40px;
+    @media screen and (max-width: 650px) {
+        order: 2;
+        margin: 0 0 15px ;
+
+    }
+}
+
+.image {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+}
+
+.logo {
+    padding-top: 4px;
+    text-align: center;
+    font-family: $rubic;
+    font-weight: 700;
+    font-size: 32px;
+    color: black;
+    transition: 200ms linear;
+}
+
+.avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.wrapperLinks {
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 650px) {
+        margin-bottom: 30px;
+    }
+}
+
+.link {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    &:hover > .overlay {
+        opacity: 1;
+        visibility: initial;
+        pointer-events: initial;
+    }
+}
+
+.overlay {
+    z-index: 99;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 200ms linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 28px;
+    height: 28px;
+    color: $purple;
+}
+
+.wrapperTeam {
+    max-width: 270px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.teamTitle {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: $arima;
+    color: black;
+    margin-bottom: 10px;
+    transition: 200ms linear;
+}
+
+.wrapperText {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerText {
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: $arima;
+    margin-right: 5px;
+    padding-top: 4px;
+    transition: 200ms linear;
+}
+
+.copyRightIcon {
+    width: 15px;
+    height: 15px;
+}
+
+.darkThemeText {
+    color: $darkThemeText;
+}
+
+.lightThemeText {
+    color: $lightThemeText;
+}

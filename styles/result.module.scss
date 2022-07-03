@@ -1,0 +1,38 @@
+@import './styles/variables.scss';
+
+.main_wrapper {
+  height: 100%;
+}
+
+.results__wrapper {
+  background-color: $belge;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  height: 100%;
+}
+
+.result {
+  text-align: center;
+  margin: 50px 0;
+  font-family: $arima;
+  color: black;
+}
+
+.button {
+  width: 100px;
+  margin: 0 auto;
+  position: absolute;
+  left: 25px;
+  top: 0px;
+  // background-color: $purple;
+}
+
+.themeDark {
+  background-color: $darkThemeMain;
+}
+
+.themeLight {
+  background-color: $lightThemeMain;
+}

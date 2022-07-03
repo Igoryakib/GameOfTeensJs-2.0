@@ -1,0 +1,116 @@
+@import "../../styles/variables.scss";
+.logo_img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 30px;
+    @media (max-width: 800px) {
+        display: none;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: $brown;
+    padding: 16px 20px;
+    transition: 200ms linear;
+    flex-wrap: wrap;
+}
+
+.themeDark {
+    background-color: $darkTheme;
+}
+
+.themeLight {
+    background-color: $lightTheme;
+}
+
+.user_name {
+    font-family: $roboto;
+    color: black;
+    margin-right: 15px;
+    font-size: 20px;
+    transition: 200ms linear;
+}
+
+.icon {
+    transition: 600ms linear !important;
+    color: black;
+    width: 35px !important;
+    height: 35px !important;
+    font-size: 35px !important;
+    cursor: pointer !important;
+    margin-left: 15px !important;
+    &:hover {
+        color: $purple !important;
+        transform: rotate(180deg) !important;
+    }
+}
+
+.link {
+    font-family: $roboto;
+    color: black;
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 200ms linear;
+    border-bottom: 3px solid transparent;
+    // padding-bottom: 2px;
+    flex-wrap: wrap;
+    &:hover {
+        color: $purple;
+    }
+}
+
+.active {
+    color: $purple !important;
+    border-color: $purple;
+}
+
+.darkThemeLink {
+    color: $darkThemeText;
+}
+
+.lightThemeLink {
+    color: $lightThemeText;
+}
+
+.user_img {
+    width: 30px;
+    height: 30px;
+}
+.wrapper_page {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100vw;
+    flex-wrap: wrap;
+    @media (max-width: 780px) {
+        justify-content: space-around;
+    }
+}
+.user_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}

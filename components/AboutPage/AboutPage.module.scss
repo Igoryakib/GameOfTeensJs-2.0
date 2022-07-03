@@ -1,0 +1,104 @@
+@import "../../styles//variables.scss";
+.main_title {
+    font-size: 35px;
+    font-family: $arima;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.main_text {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: $roboto;
+    text-align: center;
+    font-weight: 100;
+    max-width: 500px;
+    margin: 0 auto;
+    opacity: 0.7;
+    margin-bottom: 50px;
+}
+.title {
+     font-size: 35px;
+    font-family: $arima;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.cards_wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-top: 20px;
+
+}
+.item_wrapper {
+    width: 250px;
+    background-color: $brown;
+    border-radius: 10px;
+    min-height: 220px;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item_title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: $arima;
+    font-weight: 400;
+}
+
+.item_img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 50px !important;
+}
+.item_text {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family: $roboto;
+    font-weight: 100;
+    flex-grow: 1;
+}
+.main_wrapper {
+    background-color: $belge;
+    padding: 40px 20px;
+}
+.img_btn {
+    margin: 0 auto;
+    display: flex;
+}
+
+.themeDark {
+    background-color: $darkThemeMain;
+}
+
+.themeLight {
+    background-color: $lightThemeMain;
+}
+
+.cardDarkTheme {
+    background-color: $darkTheme;
+}
+
+.cardLightTheme {
+    background-color: $lightTheme;
+}
+
+.darkThemeText {
+    color: $darkThemeText;
+}
+
+.lightThemeText {
+    color: $lightThemeText;
+}
